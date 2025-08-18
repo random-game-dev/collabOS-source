@@ -1,0 +1,12 @@
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\bin\Debug\net6.0\CosmosKernel8.deps.json
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\bin\Debug\net6.0\CosmosKernel8.dll
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\bin\Debug\net6.0\CosmosKernel8.pdb
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.csproj.AssemblyReference.cache
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.AssemblyInfoInputs.cache
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.AssemblyInfo.cs
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.csproj.CoreCompileInputs.cache
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.dll
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\refint\CosmosKernel8.dll
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\CosmosKernel8.pdb
+C:\Users\philb\source\repos\CosmosKernel8\CosmosKernel8\obj\Debug\net6.0\ref\CosmosKernel8.dll
