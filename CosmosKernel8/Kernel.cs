@@ -1,4 +1,5 @@
-﻿using Cosmos.System.FileSystem.VFS;
+using CollabGui;
+using Cosmos.System.FileSystem.VFS;
 using Cosmos.System.Graphics;
 using Cosmos.System.Graphics.Fonts;
 using System;
@@ -7,12 +8,15 @@ using System.Drawing;
 using System.IO;
 using System.Threading;
 using Sys = Cosmos.System;
+using System.ComponentModel.Design;
 
 namespace GraphicTest
 {
     public class Kernel : Sys.Kernel
     {
         Canvas canvas;
+
+        public static bool RunGui;
 
         Sys.FileSystem.CosmosVFS fs = new Cosmos.System.FileSystem.CosmosVFS();
 
@@ -100,7 +104,7 @@ namespace GraphicTest
                     Console.Write("root@CollabOS:~$ ");
                     var input = Console.ReadLine();
 
-                    if (!(input == "hello" || input == "diskspace" || input == "help" || input == "crf" || input == "crd" || input == "ls" || input == "edit" || input == "mv" || input == "del" || input == "delD" || input == "rdfl"))
+                    if (!(input == "hello" || input == "diskspace" || input == "help" || input == "crf" || input == "crd" || input == "ls" || input == "edit" || input == "mv" || input == "del" || input == "delD" || input.Contains("echo") || input == "CollabGUI"))
                     {
                         Console.WriteLine(input + " Command Not Found");
                     }
@@ -127,6 +131,7 @@ namespace GraphicTest
                         Console.WriteLine("rdfl: read a file");
                         Console.WriteLine("shutdown: shutdown the system");
                         Console.WriteLine("restart: restart the system");
+                        Console.WriteLine("CollabGUI: initialize the GUI system");
                     }
                     if (input == "ls")
                     {
@@ -185,10 +190,10 @@ namespace GraphicTest
                             Console.WriteLine(e.ToString());
                         }
                     }
-                    if (input == "del")
+                    if (input.Contains("del"))
                     {
-                        Console.WriteLine("What file do you want to delete?");
-                        string filetoremove = Console.ReadLine();
+                        string[] dfargs = input.Split(' ');
+                        string filetoremove = dfargs[1];
                         try
                         {
                             File.Delete(@"0:\" + filetoremove);
@@ -198,10 +203,10 @@ namespace GraphicTest
                             Console.WriteLine(e.ToString());
                         }
                     }
-                    if (input == "delD")
+                    if (input.Contains("delD"))
                     {
-                        Console.WriteLine("What folder do you want to delete?");
-                        string directorytoremove = Console.ReadLine();
+                        string[] mvargs = input.Split(' ');
+                        string directorytoremove = mvargs[1];
                         try
                         {
                             Directory.Delete(@"0:\" + directorytoremove);
@@ -211,12 +216,11 @@ namespace GraphicTest
                             Console.WriteLine(e.ToString());
                         }
                     }
-                    if (input == "mv")
+                    if (input.Contains("mv"))
                     {
-                        Console.WriteLine("What file or folder do you want to move");
-                        string objecttomove = Console.ReadLine();
-                        Console.WriteLine("Where?");
-                        string pathtomove = Console.ReadLine();
+                        string[] mvargs = input.Split(' ');
+                        string objecttomove = mvargs[1];
+                        string pathtomove = mvargs[2];
                         try
                         {
                             string start = @"0:\";
@@ -227,10 +231,10 @@ namespace GraphicTest
                             Console.WriteLine(e.ToString());
                         }
                     }
-                    if (input == "rdfl")
+                    if (input.Contains("echo"))
                     {
-                        Console.WriteLine("Type the name of the file you want to read");
-                        string filetoread = Console.ReadLine();
+                        string[] inputargs = input.Split(' ');
+                        string filetoread = inputargs[1];
                         try
                         {
                             Console.WriteLine(File.ReadAllText(@"0:\" + filetoread));
@@ -249,6 +253,16 @@ namespace GraphicTest
                     {
                         Console.WriteLine("restarting...");
                         Sys.Power.Reboot();
+                    }
+                    if (input == "CollabGUI")
+                    {
+                        CollabGUIClass.InitGUI();
+                        CollabGUIClass.EnableMouse();
+
+                        while (true)
+                        {
+                            CollabGUIClass.UpdateMouse();
+                        }
                     }
                 }
             }
