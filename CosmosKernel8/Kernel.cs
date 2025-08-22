@@ -149,8 +149,8 @@ namespace GraphicTest
                     }
                     if (input == "crf")
                     {
-                        Console.WriteLine("What do you want the file to be named?");
-                        string filename = Console.ReadLine();
+                        string[] cfargs = input.Split(' ');
+                        string filename = cfargs[1];
                         try
                         {
                             var file_stream = File.Create(@"0:\" + filename);
@@ -163,8 +163,8 @@ namespace GraphicTest
                     }
                     if (input == "crd")
                     {
-                        Console.WriteLine("What do you want to name your folder?");
-                        string foldername = Console.ReadLine();
+                        string[] cdargs = input.Split(' ');
+                        string foldername = cdargs[1];
                         try
                         {
                             Directory.CreateDirectory(@"0:\" + foldername);
@@ -205,8 +205,8 @@ namespace GraphicTest
                     }
                     if (input.Contains("delD"))
                     {
-                        string[] mvargs = input.Split(' ');
-                        string directorytoremove = mvargs[1];
+                        string[] deldargs = input.Split(' ');
+                        string directorytoremove = deldargs[1];
                         try
                         {
                             Directory.Delete(@"0:\" + directorytoremove);
@@ -273,3 +273,4 @@ namespace GraphicTest
         }
     }
 }
+
