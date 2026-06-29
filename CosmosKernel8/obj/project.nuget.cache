@@ -1,17 +1,56 @@
 {
   "version": 2,
-  "dgSpecHash": "9YkOdPcJ0i0=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\philb\\source\\repos\\CosmosKernel8\\CosmosKernel8\\CosmosKernel8.csproj",
+  "dgSpecHash": "GmvA+MGZccQ=",
+  "success": false,
+  "projectFilePath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.build\\0.1.0-localbuild20250817013238\\cosmos.build.0.1.0-localbuild20250817013238.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.common\\0.1.0-localbuild20250817013252\\cosmos.common.0.1.0-localbuild20250817013252.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.core\\0.1.0-localbuild20250817013252\\cosmos.core.0.1.0-localbuild20250817013252.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.debug.kernel\\0.1.0-localbuild20250817013252\\cosmos.debug.kernel.0.1.0-localbuild20250817013252.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.hal2\\0.1.0-localbuild20250817013252\\cosmos.hal2.0.1.0-localbuild20250817013252.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.plugs\\0.1.0-localbuild20250817013252\\cosmos.plugs.0.1.0-localbuild20250817013252.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\cosmos.system2\\0.1.0-localbuild20250817013252\\cosmos.system2.0.1.0-localbuild20250817013252.nupkg.sha512",
-    "C:\\Users\\philb\\.nuget\\packages\\il2cpu.api\\0.1.0-localbuild20250817013252\\il2cpu.api.0.1.0-localbuild20250817013252.nupkg.sha512"
+    "/home/codespace/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/home/codespace/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Cosmos.Build. No packages exist with this id in source(s): nuget.org",
+      "projectPath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "filePath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "libraryId": "Cosmos.Build",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Cosmos.Debug.Kernel. No packages exist with this id in source(s): nuget.org",
+      "projectPath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "filePath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "libraryId": "Cosmos.Debug.Kernel",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Cosmos.System2. No packages exist with this id in source(s): nuget.org",
+      "projectPath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "filePath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "libraryId": "Cosmos.System2",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Cosmos.Plugs. No packages exist with this id in source(s): nuget.org",
+      "projectPath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "filePath": "/workspaces/collabOS-source/CosmosKernel8/CosmosKernel8.csproj",
+      "libraryId": "Cosmos.Plugs",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -104,7 +104,7 @@ namespace GraphicTest
                     Console.Write("root@CollabOS:~$ ");
                     var input = Console.ReadLine();
 
-                    if (!(input == "hello" || input == "diskspace" || input == "help" || input == "crf" || input == "crd" || input == "ls" || input == "edit" || input == "mv" || input == "del" || input == "delD" || input.Contains("echo") || input == "CollabGUI"))
+                    if (!(input == "hello" || input == "diskspace" || input == "help" || input == "crf" || input == "crd" || input == "ls" || input == "edit" || input == "mv" || input == "del" || input == "delD" || input.Contains("echo") || input == "CollabGUI" || input == "cpython"))
                     {
                         Console.WriteLine(input + " Command Not Found");
                     }
@@ -132,6 +132,7 @@ namespace GraphicTest
                         Console.WriteLine("shutdown: shutdown the system");
                         Console.WriteLine("restart: restart the system");
                         Console.WriteLine("CollabGUI: initialize the GUI system");
+                        Console.WriteLine("cpython: Opens CollabGUI and lets you write Python (currently just a placeholder)")
                     }
                     if (input == "ls")
                     {
@@ -243,6 +244,10 @@ namespace GraphicTest
                         {
                             Console.WriteLine(e.ToString());
                         }
+                    }
+                    if (input == "cpython")
+                    {
+                        Console.WriteLine("Sorry, CPython has not been supported yet, please wait until 0.5.0 or later.");
                     }
                     if (input == "shutdown")
                     {

@@ -1,3 +1,4 @@
 import tkinter as tk
-from tkinter import messageBox
-tkinter.showInfo("LOL","i aint coding all that")
+from tkinter import messagebox
+messagebox.showinfo("LOL","i aint coding all that")
+# happy now random guy i dont know!?

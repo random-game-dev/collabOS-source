@@ -7,7 +7,7 @@ We're collabing with alkonsafe (@sleepytemple2484763 on websim)
 
 Users (websim usernames)
  @sleepytemple2484763
- @copy_sh
+ @copy_sh (now teamscripters_official, but copy_sh still works)
 
 # collabOS - More (sometimes unrelated)
 
@@ -19,3 +19,4 @@ yeh :P
 # collabOS - more info cuz idk
 
 expect some ai generated code by github copilot, i suck at coding asemmbly and C#, never coded in it
+please dont sell this without credit, i know the license says you can but please dont
